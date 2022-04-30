@@ -1,3 +1,6 @@
+import user from './social-profile/user.json';
+import Profile from './social-profile/profile';
+
 export const App = () => {
   return (
     <div
@@ -10,7 +13,13 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      React ddfhthyjy template
+      <Profile
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      />
     </div>
   );
 };
