@@ -1,0 +1,96 @@
+.profile{
+margin: 0 auto;
+width: 320px;
+
+border-radius: 4px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+background-color: #fff;
+box-shadow: 4px 4px 8px rgba(31, 31, 31, 0.3);
+}
+
+.description {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border:2px solid rgb(196, 196, 196);
+}
+
+.avatar {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 150px;
+    
+    border-radius: 50%;
+    background-color: white;
+}
+
+.name {
+    margin: 0;
+    margin-top: 15px;
+    
+    width: 100%;
+    color: black;
+    
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.tag{
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+    font-size: 20px;
+    color: rgb(92, 92, 92);
+}
+.location{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    text-align: center;
+    display: block;
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(211, 131, 11);
+}
+.stats {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.list{
+    border:1px solid rgb(196, 196, 196);
+    width: 80px;
+    padding: 15px;
+    background-color: rgb(230, 230, 230);
+}
+.label {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: rgb(92, 92, 92);
+}
+.quantity{
+    color: rgb(211, 131, 11);
+    font-weight: 700;
+}
