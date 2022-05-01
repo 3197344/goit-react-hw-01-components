@@ -64,15 +64,13 @@ box-shadow: 4px 4px 8px rgba(31, 31, 31, 0.3);
 }
 .stats {
     width: 100%;
-    margin: 0;
+    
     padding: 0;
     display: flex;
     list-style: none;
     margin: 0 auto;
     text-align: center;
     font-size: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 .list{
     border:1px solid rgb(196, 196, 196);
