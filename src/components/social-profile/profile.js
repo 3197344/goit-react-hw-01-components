@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import s from './profile.module.css';
+import AboutUser from './aboutUser';
 
 export default function Profile({ username, tag, location, avatar, stats }) {
   return (<div className={s.profile}>
@@ -13,21 +14,7 @@ export default function Profile({ username, tag, location, avatar, stats }) {
       <p className={s.tag}>@{tag}</p>
       <p className={s.location}>{location}</p>
     </div>
-
-    <ul className={s.stats}>
-      <li className={s.list}>
-        <span className={s.label}>Followers</span>
-        <span className={s.quantity}> {stats.followers}</span>
-      </li>
-      <li className={s.list}>
-        <span className={s.label}>Views</span>
-        <span className={s.quantity}> {stats.views} </span>
-      </li>
-      <li className={s.list}>
-        <span className={s.label}>Likes</span>
-        <span className={s.quantity}> {stats.likes}</span>
-      </li>
-    </ul>
+    <AboutUser stats={stats} />
   </div>);
 };
 
