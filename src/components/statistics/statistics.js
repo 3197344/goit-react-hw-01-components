@@ -8,7 +8,7 @@ function getRandomHexColor() {
 export default function Statistics({ title, data }) {
     return (
     <section className={s.statistic}>
-        <h2 className={s.title}>{title}</h2>
+          {title && <h2 className={s.title}>{title}</h2>}
 
         <ul className={s.list}>
         {data.map(({ id, label, percentage }) => (

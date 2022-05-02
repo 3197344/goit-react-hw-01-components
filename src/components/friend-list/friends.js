@@ -3,21 +3,23 @@ import s from './friends.module.css';
 import FriendListItem from './friendListItem';
 
 export default function FriendList({ friends }) {
-    return (
-    <ul className={s.friendList}>
+        return (
+        <ul className={s.friendList}>
         {friends.map(friend => (
-        <li className={s.item} key={friend.id}>
-            <FriendListItem
-            avatar={friend.avatar}
-            name={friend.name}
-            isOnline={friend.isOnline}
-        />
-        </li>
+            <FriendListItem {...friend} key={friend.id} />
         ))}
-    </ul>
+        </ul>
     );
-}
+    };
 
-FriendList.propTypes = {
-    friends: PropTypes.array,
-};
+    FriendList.propTypes = {
+    friends: PropTypes.arrayOf(
+        PropTypes.exact({
+        avatar: PropTypes.string.isRequired,
+        name: PropTypes.string.isRequired,
+        isOnline: PropTypes.bool.isRequired,
+        id: PropTypes.number.isRequired,
+        }),
+    ).isRequired,
+    };
+
